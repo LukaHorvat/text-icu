@@ -1,5 +1,5 @@
 name:           text-icu
-version:        0.55.1.0
+version:        0.55.2.0
 synopsis:       Bindings to the ICU library
 homepage:       https://github.com/bos/text-icu
 bug-reports:    https://github.com/bos/text-icu/issues
@@ -86,7 +86,7 @@ library
     include-dirs: /usr/local/opt/icu4c/include
   extra-libraries: icuuc
   if os(mingw32)
-    extra-libraries: icuin icudt
+    extra-libraries: icuin icudt icuio icutu libicuio
   else
     extra-libraries: icui18n icudata
 
